@@ -1,0 +1,165 @@
+// -----------------
+// About
+// -----------------
+.home-about {
+	padding: 14rem 0;
+	background-color: $clr-offwhite;
+	.wrapper {
+		flex-direction: column;
+		text-align: center;
+		align-items: center;
+		width: 57rem;
+		h3 {
+			margin: 0;
+		}
+		p {
+			margin: 2rem 0;
+		}
+	}
+}
+
+// -----------------
+// Events
+// -----------------
+.events {
+	// container
+	.wrapper {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		padding: 0;
+		margin: 0 auto;
+	}
+	// event tiles
+	li {
+		flex-basis: 42%;
+	}
+	// left image
+	li:nth-child(1) img {
+		box-shadow: 1rem 1rem $clr-sunny-yellow;
+		position: relative;
+		top: -1.5rem;
+	}
+	// left text container
+	li:nth-child(2) {
+		text-align: left;
+		padding: 6rem 8rem 0 0;
+	}
+	// right text container
+	li:nth-child(3) {
+		text-align: right;
+		padding: 2rem 0 0 8rem;
+	}
+	// right image
+	li:nth-child(4) img {
+		box-shadow: -1rem 1rem $clr-sunny-yellow;
+		position: relative;
+		top: 1.5rem;
+	}
+	// text content
+	h6,
+	p {
+		margin: 2rem 0;
+	}
+}
+
+// -----------------
+// Services
+// -----------------
+
+.services {
+	padding: 10rem 0 1rem 0;
+	background-color: $clr-offwhite;
+
+	// container
+	.wrapper {
+		display: flex;
+		flex-direction: column;
+	}
+	// service item container
+	ul {
+		display: flex;
+		flex-direction: row;
+		padding: 0 0 2rem 0;
+		gap: $gap;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	// service items
+	li {
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		flex-basis: 40%;
+	}
+	// service text
+	h5,
+	h6,
+	p {
+		margin: 0;
+		padding: 0;
+	}
+
+	p {
+		margin: 1.5rem 0 1rem 0;
+	}
+	// service icons
+	i {
+		background-color: $clr-sunny-yellow;
+		padding: 0.3rem;
+		border-radius: 50%;
+		position: absolute;
+		left: -3.5rem;
+		top: -0.2rem;
+		transform: scale(1.75, 1.75);
+	}
+}
+
+// -----------------
+// Founder
+// -----------------
+.founder {
+	background-color: $clr-offwhite;
+	// container
+	.wrapper {
+		display: flex;
+		flex-direction: row;
+		gap: $gap;
+		padding: 5rem 0;
+		justify-content: space-evenly;
+	}
+	.image-container {
+		flex-basis: 20%;
+	}
+	.text-container {
+		flex-basis: 55%;
+	}
+	img {
+		box-shadow: 1rem 1rem $clr-sunny-yellow;
+		position: relative;
+	}
+	h5 {
+		margin: 1rem 0 0 0;
+	}
+	p {
+		margin: 2.8rem 0;
+	}
+}
+
+// -----------------
+// Gallery
+// -----------------
+.gallery {
+	// container
+	.wrapper {
+		display: flex;
+		justify-content: center;
+		margin: 5rem auto;
+		padding: 0;
+		gap: $gap;
+	}
+	li {
+		flex-basis: 26%;
+	}
+}

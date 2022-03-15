@@ -1,0 +1,42 @@
+// -----------------
+// Utility Classes
+// -----------------
+.wrapper {
+	display: flex;
+	max-width: 1400px;
+	width: 80%;
+	margin: 0 auto;
+}
+// mobile-only elements
+.mobile {
+	display: none;
+}
+// desktop-only elements
+.desktop {
+	display: block;
+}
+// screen reader
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+// skip link
+.skip-link {
+	position: absolute;
+	left: -1000px;
+	top: 5px;
+	z-index: 999;
+	background: white;
+	color: black;
+}
+.skip-link:focus {
+	left: 0;
+}

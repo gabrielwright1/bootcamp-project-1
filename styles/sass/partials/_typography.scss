@@ -1,0 +1,110 @@
+// import fonts
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Roboto&display=swap");
+
+// -----------------
+// Headings
+// -----------------
+// heading (planted invitations)
+h1 {
+	@include set-typography($ff-primary, $fw-regular, $fs-700);
+	color: $clr-offwhite;
+	margin: 0;
+
+	// h1 accent (invitation)
+	span {
+		color: $clr-sunny-yellow;
+		margin: 5rem 0 0 0;
+		display: block;
+	}
+}
+
+// heading (get in touch..)
+h2 {
+	@include set-typography($ff-primary, $fw-bold, $fs-600, $lh-200);
+}
+
+// heading (what is planted)
+h3 {
+	@include set-typography($ff-primary, $fw-bold, $fs-400, normal, $ls-200);
+	text-align: center;
+}
+
+// heading (our mission..)
+h4 {
+	@include set-typography($ff-primary, $fw-bold, $fs-400, normal, $ls-200);
+}
+
+// heading (planed's founder...)
+h5 {
+	@include set-typography($ff-primary, $fw-bold, $fs-300, normal, $ls-100);
+}
+
+h6 {
+	// heading (upcoming, unique)
+	&.events,
+	&.services {
+		@include set-typography(
+			$ff-primary,
+			$fw-bold,
+			$fs-200,
+			normal,
+			$ls-100
+		);
+	}
+	// heading (Tuesday October...)
+	&.comments {
+		@include set-typography($ff-primary, $fw-bold, $fs-100, $lh-100);
+	}
+}
+
+// -----------------
+// Controls
+// -----------------
+// button (find out more, read more)
+.cta-button {
+	@include set-typography($ff-primary, $fw-bold, $fs-100, $lh-100, $ls-100);
+	text-align: center;
+	text-decoration: none;
+	color: $clr-offwhite;
+	background-color: $clr-green;
+	padding: 0.75rem 1.5rem;
+}
+
+// text style (name, email...)
+[type="text"],
+[type="email"] {
+	@include set-typography($ff-primary, $fw-light, $fs-100, $lh-100);
+}
+
+// -----------------
+// Navigation
+// -----------------
+.logo {
+	@include set-typography($ff-primary, $fw-regular, $fs-400);
+	color: $clr-offwhite;
+	text-decoration: none;
+	margin-right: 1rem;
+}
+
+.header-nav {
+	// navigation links
+	a {
+		@include set-typography($ff-primary, $fw-bold, $fs-100);
+		color: $clr-offwhite;
+		text-transform: uppercase;
+		text-decoration: none;
+	}
+	// navigation hover state
+	a:hover,
+	a:focus {
+		color: $clr-sunny-yellow;
+	}
+}
+
+// -----------------
+// General
+// -----------------
+
+body {
+	@include set-typography($ff-secondary, $fw-regular, $fs-100, $lh-100);
+}

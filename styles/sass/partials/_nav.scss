@@ -1,0 +1,14 @@
+// Header Nav
+.header-nav {
+	display: flex;
+	flex-direction: row;
+	padding: 1.5rem 0 0 10rem;
+	margin: 0;
+	// nav container
+	ul {
+		display: flex;
+		flex-direction: row;
+		gap: $gap;
+		margin: 0;
+	}
+}
