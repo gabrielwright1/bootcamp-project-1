@@ -715,4 +715,21 @@ ul {
   .services ul {
     padding: 0 0 2rem 0;
   }
+
+  .founder .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .founder .image-container,
+.founder .text-container {
+    width: 60%;
+  }
+  .founder img {
+    width: 100%;
+  }
 }

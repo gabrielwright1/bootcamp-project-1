@@ -68,6 +68,21 @@
 			padding: 0 0 2rem 0;
 		}
 	}
+
+	// founder
+	.founder {
+		.wrapper {
+			flex-direction: column;
+			align-items: center;
+		}
+		.image-container,
+		.text-container {
+			width: 60%;
+		}
+		img {
+			width: 100%;
+		}
+	}
 }
 
 // Portrait tablet and small desktops
