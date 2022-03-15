@@ -81,8 +81,7 @@
 	ul {
 		display: flex;
 		flex-direction: row;
-		padding: 0 0 2rem 0;
-		gap: $gap;
+		padding: 0 0 2rem 5rem;
 		flex-wrap: wrap;
 		justify-content: center;
 	}
@@ -92,6 +91,7 @@
 		flex-direction: column;
 		position: relative;
 		flex-basis: 40%;
+		margin: 1rem 2rem;
 	}
 	// service text
 	h5,

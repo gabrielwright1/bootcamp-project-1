@@ -553,8 +553,7 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding: 0 0 2rem 0;
-  gap: 3rem;
+  padding: 0 0 2rem 5rem;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: center;
@@ -572,6 +571,7 @@ ul {
   position: relative;
   -ms-flex-preferred-size: 40%;
       flex-basis: 40%;
+  margin: 1rem 2rem;
 }
 .services h5,
 .services h6,
@@ -644,4 +644,75 @@ ul {
 .gallery li {
   -ms-flex-preferred-size: 26%;
       flex-basis: 26%;
+}
+
+@media (max-width: 1100px) {
+  .home-header .text-container {
+    padding: 4rem 0 2rem 0;
+    left: 0;
+  }
+  .home-header .image-container {
+    width: 28rem;
+  }
+  .home-header .header-nav {
+    padding: 1.5rem 0 0 0;
+  }
+
+  .home-about {
+    padding: 10rem 0 7rem 0;
+  }
+  .home-about .wrapper {
+    width: 60%;
+  }
+
+  .events .wrapper {
+    width: 60%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 3rem;
+  }
+  .events .wrapper li:nth-child(2),
+.events .wrapper li:nth-child(3) {
+    text-align: left;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 0 3rem 0;
+  }
+  .events .wrapper li:nth-child(3) {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  .events .wrapper li:nth-child(4) {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .events .wrapper li img {
+    top: -2rem;
+  }
+  .events .wrapper .text-container h6 {
+    margin: 0;
+  }
+
+  .services {
+    padding: 4rem 0 1rem 0;
+  }
+  .services ul {
+    padding: 0 0 2rem 0;
+  }
 }
