@@ -1,10 +1,19 @@
-// medium desktop
-@media (max-width: 1100px) {
-	// -----------------
-	// Home Page
-	// -----------------
+@media (max-width: 1650px) {
+	.events {
+		// right container
+		li:nth-child(2),
+		li:nth-child(3) {
+			margin: auto 0;
+		}
+	}
+}
+
+@media (max-width: 1200px) {
 	// header
 	.home-header {
+		// prevent headerbox from overflowing
+		overflow-x: clip;
+
 		// main title
 		.text-container {
 			padding: 4rem 0 2rem 0;
@@ -13,24 +22,21 @@
 		// header box
 		.image-container {
 			width: 28rem;
+			right: -8rem;
 		}
 		// nav
 		.header-nav {
 			padding: 1.5rem 0 0 0;
 		}
 	}
-	// about section
+	// about
 	.home-about {
 		padding: 10rem 0 7rem 0;
-		.wrapper {
-			width: 60%;
-		}
 	}
 
-	// events section
+	// events
 	.events {
 		.wrapper {
-			width: 60%;
 			flex-direction: column;
 			align-items: center;
 			gap: $gap;
@@ -61,13 +67,11 @@
 			}
 		}
 	}
+
 	// services
 	.services {
 		padding: 4rem 0 1rem 0;
 
-		.wrapper {
-			width: 60%;
-		}
 		ul {
 			padding: 0 0 2rem 2rem;
 		}
@@ -87,7 +91,6 @@
 			flex-direction: column;
 			align-items: center;
 			padding: 4rem 0;
-			width: 60%;
 		}
 		.image-container,
 		.text-container {
@@ -105,13 +108,19 @@
 			width: 100%;
 		}
 	}
+
+	// resize wrappers
+	.home-header .wrapper,
+	.home-about .wrapper,
+	.events .wrapper,
+	.services .wrapper,
+	.services .wrapper,
+	.founder .wrapper,
+	.gallery .wrapper {
+		width: 80%;
+	}
 }
 
-// Portrait tablet and small desktops
-@media (max-width: 940px) {
-}
-
-// Landscape phone to portrait tablet
 @media (max-width: 768px) {
 	.gallery {
 		.wrapper {
@@ -128,10 +137,106 @@
 	}
 }
 
-// Landscape phones and down
+@media (max-width: 620px) {
+	.home-header {
+		height: 40rem;
+		h1 {
+			@include set-typography($ff-primary, $fw-regular, $fs-675);
+		}
+		.image-container {
+			width: 18rem;
+			right: -4rem;
+		}
+	}
+	.header-nav {
+		&.mobile {
+			display: flex;
+			justify-content: space-between;
+			// move the mobile nav offscreen
+			ul {
+				padding: 0;
+				flex-direction: column;
+				position: absolute;
+				right: 1000px;
+			}
+			// hamburger icon
+			.mobile-menu {
+				color: $clr-offwhite;
+				transform: scale(3, 1.5);
+				display: flex;
+				padding: 0.2rem 0.5rem 0 0;
+			}
+		}
+	}
+}
 @media (max-width: 480px) {
+	.home-header {
+		height: 35rem;
+		h1 {
+			@include set-typography($ff-primary, $fw-regular, $fs-650);
+		}
+		.image-container {
+			width: 15rem;
+			right: -2rem;
+		}
+		.text-container {
+			top: 15rem;
+		}
+	}
+
+	// services
+	.services {
+		li {
+			margin: 0.5rem;
+		}
+		i {
+			left: -1.5rem;
+		}
+	}
+
+	// resize wrappers
+	.home-header .wrapper,
+	.home-about .wrapper,
+	.events .wrapper,
+	.services .wrapper,
+	.services .wrapper,
+	.founder .wrapper,
+	.gallery .wrapper {
+		width: 90%;
+	}
 }
 
-// Small phones
-@media (max-width: 320px) {
+@media (max-width: 360px) {
+	.home-header {
+		height: 30rem;
+		// shrink header to fit smaller screen
+		h1 {
+			@include set-typography($ff-primary, $fw-regular, $fs-625);
+		}
+		.text-container {
+			top: 10rem;
+		}
+		.image-container {
+			width: 10rem;
+			bottom: -3rem;
+			right: -1rem;
+		}
+	}
+	.gallery {
+		.wrapper {
+			gap: 1rem;
+			margin: 1rem auto;
+		}
+	}
+
+	// resize wrappers
+	.home-header .wrapper,
+	.home-about .wrapper,
+	.events .wrapper,
+	.services .wrapper,
+	.services .wrapper,
+	.founder .wrapper,
+	.gallery .wrapper {
+		width: 95%;
+	}
 }
