@@ -427,6 +427,15 @@ ul {
   display: none;
 }
 
+.blog-header .wrapper {
+  max-width: none;
+  width: 100%;
+}
+.blog-header .header-nav {
+  background-color: black;
+  padding: 1.5rem 0 0 calc(20% + 10rem);
+}
+
 .home-header {
   background: url(../../../assets/home-image-1.jpg);
   background-size: cover;
@@ -458,6 +467,34 @@ ul {
   right: 0;
   bottom: -5rem;
   width: 40rem;
+}
+
+.blog-header {
+  background: url(../../../assets/blog-header-1.jpg);
+  background-size: cover;
+  height: 45rem;
+}
+.blog-header .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  height: 100%;
+}
+.blog-header .text-container {
+  padding: 0 0 10rem 0;
+}
+.blog-header .image-container {
+  position: absolute;
+  right: 0;
+  bottom: -10rem;
 }
 
 .copyright {

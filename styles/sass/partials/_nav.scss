@@ -15,3 +15,15 @@
 		display: none;
 	}
 }
+
+// Blog
+.blog-header {
+	.wrapper {
+		max-width: none;
+		width: 100%;
+	}
+	.header-nav {
+		background-color: black;
+		padding: 1.5rem 0 0 calc(20% + 10rem);
+	}
+}

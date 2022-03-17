@@ -27,3 +27,26 @@
 		width: 40rem;
 	}
 }
+
+// Blog
+.blog-header {
+	background: url(../../../assets/blog-header-1.jpg);
+	background-size: cover;
+	height: 45rem;
+	// container
+	.wrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		position: relative;
+		height: 100%;
+	}
+	.text-container {
+		padding: 0 0 10rem 0;
+	}
+	.image-container {
+		position: absolute;
+		right: 0;
+		bottom: -10rem;
+	}
+}
