@@ -41,9 +41,10 @@ h5 {
 }
 
 h6 {
-	// heading (upcoming, unique)
+	// heading (upcoming, unique, about planted, recent posts)
 	&.events,
-	&.services {
+	&.services,
+	&.blog-about {
 		@include set-typography(
 			$ff-primary,
 			$fw-bold,
@@ -100,6 +101,27 @@ h6 {
 		a:hover,
 		a:focus {
 			color: $clr-sunny-yellow;
+		}
+	}
+}
+.blog-about {
+	a {
+		color: $clr-forest-green;
+		font-style: italic;
+		text-decoration: none;
+		@include set-typography($ff-primary, $fw-bold, $fs-100, $lh-100);
+	}
+}
+.blog-mission {
+	// date stamp (Monday January 21...)
+	p:nth-child(2) {
+		color: $clr-forest-green;
+		font-style: italic;
+		text-decoration: none;
+		@include set-typography($ff-secondary, $fw-regular, $fs-100, $lh-100);
+		// Yousra
+		span {
+			@include set-typography($ff-secondary, $fw-bold, $fs-100, $lh-100);
 		}
 	}
 }

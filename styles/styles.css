@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Roboto&display=swap");
 html {
   line-height: 1.15;
@@ -292,7 +293,7 @@ h5 {
   letter-spacing: 0.05rem;
 }
 
-h6.events, h6.services {
+h6.events, h6.services, h6.blog-about {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 700;
   font-size: 1.6rem;
@@ -345,6 +346,32 @@ h6.comments {
 .header-nav li a:hover,
 .header-nav li a:focus {
   color: #f8e71c;
+}
+
+.blog-about a {
+  color: #074115;
+  font-style: italic;
+  text-decoration: none;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.6rem;
+}
+
+.blog-mission p:nth-child(2) {
+  color: #074115;
+  font-style: italic;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.6rem;
+}
+.blog-mission p:nth-child(2) span {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.6rem;
 }
 
 body {
@@ -495,7 +522,6 @@ ul {
   left: calc(10% + 10rem);
 }
 .blog-header .image-container {
-  display: none;
   position: absolute;
   right: 10%;
   bottom: -25rem;
@@ -522,6 +548,7 @@ main.blog {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  background-color: #f0efed;
 }
 main.blog .wrapper {
   display: -webkit-box;
@@ -531,6 +558,11 @@ main.blog .wrapper {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+main.blog > .wrapper:first-child {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  margin: 0 auto;
 }
 
 .home-about {
@@ -553,6 +585,44 @@ main.blog .wrapper {
 }
 .home-about .wrapper p {
   margin: 2rem 0;
+}
+
+.blog-about {
+  margin: 9rem 0 0 20rem;
+}
+.blog-about .wrapper {
+  width: 25rem;
+  background-color: white;
+  position: relative;
+  height: 52rem;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.blog-about .text-container {
+  padding: 0 2rem;
+  margin: 3rem 0;
+}
+.blog-about .text-container ul {
+  padding: 0 0 0 0.5rem;
+  margin: 0;
+}
+.blog-about .text-container li::before {
+  content: "•";
+  color: #0e902d;
+  padding: 0 1rem 0 0;
+}
+.blog-about .text-container h6 {
+  margin: 0 0 1rem 0;
+  background-color: inherit;
+}
+.blog-about .text-container p {
+  margin: 0;
+}
+.blog-about .image-container {
+  position: absolute;
+  top: -2rem;
+  left: -9rem;
 }
 
 .events .wrapper {
@@ -743,9 +813,22 @@ main.blog .wrapper {
 }
 
 .blog-mission {
-  padding: 2rem;
+  margin: 26rem calc(10% + 10rem) 0 5rem;
+  padding: 6rem 0 3rem 3rem;
   -webkit-box-shadow: -1rem 1rem #f8e71c;
           box-shadow: -1rem 1rem #f8e71c;
+}
+.blog-mission h4 {
+  margin: 0;
+}
+.blog-mission p:nth-child(2) {
+  margin: 0;
+}
+.blog-mission p:nth-child(3) {
+  margin: 3rem 0 0 0;
+}
+.blog-mission .text-container {
+  padding: 0 5rem 0 0;
 }
 
 @media (max-width: 1650px) {

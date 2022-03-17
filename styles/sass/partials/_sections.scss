@@ -5,9 +5,18 @@ main {
 	&.blog {
 		display: flex;
 		flex-direction: row;
+		background-color: $clr-offwhite;
+
 		.wrapper {
 			display: flex;
 			flex-direction: column;
+		}
+
+		//left column
+		& > .wrapper:first-child {
+			// width: 100%;
+			flex-basis: 30%;
+			margin: 0 auto;
 		}
 	}
 }
@@ -29,6 +38,43 @@ main {
 		p {
 			margin: 2rem 0;
 		}
+	}
+}
+
+.blog-about {
+	margin: 9rem 0 0 20rem;
+	.wrapper {
+		width: 25rem;
+		background-color: white;
+		position: relative;
+		height: 52rem;
+		justify-content: flex-end;
+	}
+	.text-container {
+		padding: 0 2rem;
+		margin: 3rem 0;
+		ul {
+			padding: 0 0 0 0.5rem;
+			margin: 0;
+		}
+		li::before {
+			content: "•";
+			color: $clr-green;
+			padding: 0 1rem 0 0;
+		}
+
+		h6 {
+			margin: 0 0 1rem 0;
+			background-color: inherit;
+		}
+		p {
+			margin: 0;
+		}
+	}
+	.image-container {
+		position: absolute;
+		top: -2rem;
+		left: -9rem;
 	}
 }
 
@@ -209,6 +255,22 @@ main {
 // Mission
 // -----------------
 .blog-mission {
-	padding: 2rem;
+	margin: 26rem calc(10% + 10rem) 0 5rem;
+	padding: 6rem 0 3rem 3rem;
 	box-shadow: -1rem 1rem $clr-sunny-yellow;
+
+	h4 {
+		margin: 0;
+	}
+	// date stamp
+	p:nth-child(2) {
+		margin: 0;
+	}
+	// paragraph block
+	p:nth-child(3) {
+		margin: 3rem 0 0 0;
+	}
+	.text-container {
+		padding: 0 5rem 0 0;
+	}
 }
