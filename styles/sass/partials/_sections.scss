@@ -1,4 +1,18 @@
 // -----------------
+// Main
+// -----------------
+main {
+	&.blog {
+		display: flex;
+		flex-direction: row;
+		.wrapper {
+			display: flex;
+			flex-direction: column;
+		}
+	}
+}
+
+// -----------------
 // About
 // -----------------
 .home-about {
@@ -164,4 +178,37 @@
 	li {
 		flex-basis: 26%;
 	}
+}
+
+// -----------------
+// Comments
+// -----------------
+.blog-comments {
+	.wrapper {
+		width: 100%;
+	}
+	ul {
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		gap: $gap;
+	}
+	.user-profile {
+		display: flex;
+		.image-container {
+			flex-basis: 30%;
+		}
+		h6,
+		p {
+			margin: 0;
+		}
+	}
+}
+
+// -----------------
+// Mission
+// -----------------
+.blog-mission {
+	padding: 2rem;
+	box-shadow: -1rem 1rem $clr-sunny-yellow;
 }
