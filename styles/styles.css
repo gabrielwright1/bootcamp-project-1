@@ -262,7 +262,8 @@ h1 span {
   display: block;
 }
 
-h2 {
+h2,
+.blog-header h1 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 700;
   font-size: 4rem;
@@ -333,7 +334,7 @@ h6.comments {
   margin-right: 1rem;
 }
 
-.header-nav a {
+.header-nav li a {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 700;
   font-size: 1rem;
@@ -341,8 +342,8 @@ h6.comments {
   text-transform: uppercase;
   text-decoration: none;
 }
-.header-nav a:hover,
-.header-nav a:focus {
+.header-nav li a:hover,
+.header-nav li a:focus {
   color: #f8e71c;
 }
 
@@ -433,7 +434,7 @@ ul {
 }
 .blog-header .header-nav {
   background-color: black;
-  padding: 1.5rem 0 0 calc(20% + 10rem);
+  padding: 1.5rem 0 1rem calc(10% + 10rem);
 }
 
 .home-header {
@@ -472,7 +473,7 @@ ul {
 .blog-header {
   background: url(../../../assets/blog-header-1.jpg);
   background-size: cover;
-  height: 45rem;
+  height: 30rem;
 }
 .blog-header .wrapper {
   display: -webkit-box;
@@ -489,12 +490,19 @@ ul {
   height: 100%;
 }
 .blog-header .text-container {
-  padding: 0 0 10rem 0;
+  position: absolute;
+  top: 15rem;
+  left: calc(10% + 10rem);
 }
 .blog-header .image-container {
   position: absolute;
-  right: 0;
-  bottom: -10rem;
+  right: 10%;
+  bottom: -25rem;
+  width: 58rem;
+}
+.blog-header .image-container img {
+  -webkit-box-shadow: -1rem 2rem #f8e71c;
+          box-shadow: -1rem 2rem #f8e71c;
 }
 
 .copyright {

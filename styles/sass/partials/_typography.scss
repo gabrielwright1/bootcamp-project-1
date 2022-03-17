@@ -19,7 +19,8 @@ h1 {
 }
 
 // heading (get in touch..)
-h2 {
+h2,
+.blog-header h1 {
 	@include set-typography($ff-primary, $fw-bold, $fs-600, $lh-200);
 }
 
@@ -87,17 +88,19 @@ h6 {
 }
 
 .header-nav {
-	// navigation links
-	a {
-		@include set-typography($ff-primary, $fw-bold, $fs-100);
-		color: $clr-offwhite;
-		text-transform: uppercase;
-		text-decoration: none;
-	}
-	// navigation hover state
-	a:hover,
-	a:focus {
-		color: $clr-sunny-yellow;
+	li {
+		// navigation links
+		a {
+			@include set-typography($ff-primary, $fw-bold, $fs-100);
+			color: $clr-offwhite;
+			text-transform: uppercase;
+			text-decoration: none;
+		}
+		// navigation hover state
+		a:hover,
+		a:focus {
+			color: $clr-sunny-yellow;
+		}
 	}
 }
 

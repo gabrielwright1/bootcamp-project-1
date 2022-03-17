@@ -32,7 +32,7 @@
 .blog-header {
 	background: url(../../../assets/blog-header-1.jpg);
 	background-size: cover;
-	height: 45rem;
+	height: 30rem;
 	// container
 	.wrapper {
 		display: flex;
@@ -42,11 +42,17 @@
 		height: 100%;
 	}
 	.text-container {
-		padding: 0 0 10rem 0;
+		position: absolute;
+		top: 15rem;
+		left: calc(10% + 10rem);
 	}
 	.image-container {
 		position: absolute;
-		right: 0;
-		bottom: -10rem;
+		right: 10%;
+		bottom: -25rem;
+		width: 58rem;
+		img {
+			box-shadow: -1rem 2rem $clr-sunny-yellow;
+		}
 	}
 }
