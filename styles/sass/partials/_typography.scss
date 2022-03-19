@@ -65,7 +65,7 @@ h6 {
 	}
 	// heading (Tuesday October...)
 	&.comment-date {
-		@include set-typography($ff-primary, $fw-bold, $fs-100, $lh-100);
+		@include set-typography($ff-primary, $fw-bold, $fs-150, $lh-100);
 		color: $clr-forest-green;
 	}
 }
@@ -84,6 +84,7 @@ h6 {
 }
 
 // text style (name, email...)
+textarea,
 [type="text"],
 [type="email"] {
 	@include set-typography($ff-primary, $fw-light, $fs-100, $lh-100);

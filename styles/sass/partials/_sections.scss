@@ -276,21 +276,58 @@
 		flex-direction: column;
 		.user-profile {
 			display: flex;
-			margin: 0 9rem 5rem 0;
+			margin: 0 7rem 5rem 0;
 			.image-container {
 				width: 22rem;
 			}
 			.text-container {
-				h6,
 				p {
 					margin: 0;
+				}
+				h6 {
+					margin: 0 0 0.5rem 0;
 				}
 			}
 		}
 		.user-profile:first-of-type {
 			.text-container {
-				margin: 0 0 0 2rem;
+				margin: 0 0 0 2.2rem;
 			}
+		}
+	}
+}
+
+// -----------------
+// Blog Comment Form
+// -----------------
+.blog-comment-form {
+	margin: 1rem 0 5rem 2rem;
+	form {
+		width: calc(100% - 7.5rem);
+		display: flex;
+		flex-direction: column;
+		.input-wrapper {
+			display: flex;
+			justify-content: space-between;
+		}
+		input[type="text"],
+		input[type="email"],
+		textarea {
+			padding: 0 0 1rem 1.5rem;
+			flex-basis: 46.5%;
+			margin: 1rem 0;
+			background-color: inherit;
+			border: 0;
+			border-bottom: 2px solid $clr-green;
+		}
+		textarea {
+			border: 2px solid $clr-green;
+			padding: 2rem 0 0 1.5rem;
+		}
+		.cta-button {
+			border: none;
+			padding: 0.5rem 0;
+			margin: 1rem 0 0 0;
 		}
 	}
 }
