@@ -200,14 +200,15 @@
 	.wrapper {
 		display: flex;
 		flex-direction: column;
-		width: 23rem;
+		width: 22rem;
 		background-color: white;
 		position: relative;
-		height: 51rem;
+		height: 47rem;
 		justify-content: flex-end;
+		right: -1rem;
 	}
 	.text-container {
-		padding: 0 4rem 0 1rem;
+		padding: 0 3rem 0 1rem;
 		margin: 2rem 0;
 		ul {
 			padding: 0 0 0 0.5rem;
@@ -230,7 +231,8 @@
 	.image-container {
 		position: absolute;
 		top: -1rem;
-		left: -10rem;
+		left: -7em;
+		width: 28rem;
 	}
 }
 
@@ -238,7 +240,7 @@
 // Blog Mission
 // -----------------
 .blog-mission {
-	margin: 25rem 7rem 2rem 0;
+	margin: 21rem 7rem 2rem 0;
 	padding: 6rem 2rem 2rem 3rem;
 	box-shadow: -0.5rem 0.5em $clr-sunny-yellow;
 	h4 {

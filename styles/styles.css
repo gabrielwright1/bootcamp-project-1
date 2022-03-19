@@ -526,13 +526,13 @@ ul {
 }
 .blog-header .text-container {
   position: absolute;
-  top: 13rem;
+  top: 15rem;
   padding: 0 0 0 10rem;
 }
 .blog-header .image-container {
   position: absolute;
   right: 0;
-  top: 22rem;
+  top: 18rem;
   width: 49.3rem;
 }
 .blog-header .image-container img {
@@ -785,16 +785,17 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 23rem;
+  width: 22rem;
   background-color: white;
   position: relative;
-  height: 51rem;
+  height: 47rem;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  right: -1rem;
 }
 .blog-about .text-container {
-  padding: 0 4rem 0 1rem;
+  padding: 0 3rem 0 1rem;
   margin: 2rem 0;
 }
 .blog-about .text-container ul {
@@ -816,11 +817,12 @@ ul {
 .blog-about .image-container {
   position: absolute;
   top: -1rem;
-  left: -10rem;
+  left: -7em;
+  width: 28rem;
 }
 
 .blog-mission {
-  margin: 25rem 7rem 2rem 0;
+  margin: 21rem 7rem 2rem 0;
   padding: 6rem 2rem 2rem 3rem;
   -webkit-box-shadow: -0.5rem 0.5em #f8e71c;
           box-shadow: -0.5rem 0.5em #f8e71c;
