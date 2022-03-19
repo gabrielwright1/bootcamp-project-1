@@ -456,7 +456,7 @@ ul {
 }
 
 .blog-header .header-nav {
-  padding: 1.5rem 0 1rem 0;
+  padding: 1.5rem 0 1rem 10rem;
 }
 
 .home-header {
@@ -519,12 +519,13 @@ ul {
 .blog-header .text-container {
   position: absolute;
   top: 13rem;
+  padding: 0 0 0 10rem;
 }
 .blog-header .image-container {
   position: absolute;
   right: 0;
-  top: 16rem;
-  width: 59rem;
+  top: 22rem;
+  width: 49.3rem;
 }
 .blog-header .image-container img {
   -webkit-box-shadow: -1rem 1.2rem #f8e71c;
@@ -751,6 +752,7 @@ ul {
   display: flex;
   -ms-flex-preferred-size: 30%;
       flex-basis: 30%;
+  padding: 0 0 0 10rem;
 }
 .blog .blog-wrapper .right-wrapper {
   display: -webkit-box;
@@ -760,12 +762,12 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-preferred-size: 68%;
-      flex-basis: 68%;
+  -ms-flex-preferred-size: 57%;
+      flex-basis: 57%;
 }
 
 .blog-about {
-  margin: 10rem 0;
+  margin: 7rem 0;
 }
 .blog-about .wrapper {
   display: -webkit-box;
@@ -811,7 +813,7 @@ ul {
 
 .blog-mission {
   margin: 25rem 10rem 0 0;
-  padding: 6rem 3rem 3rem 3rem;
+  padding: 6rem 1.5rem 3rem 3rem;
   -webkit-box-shadow: -0.5rem 0.5em #f8e71c;
           box-shadow: -0.5rem 0.5em #f8e71c;
 }

@@ -49,12 +49,13 @@
 	.text-container {
 		position: absolute;
 		top: 13rem;
+		padding: 0 0 0 10rem;
 	}
 	.image-container {
 		position: absolute;
 		right: 0;
-		top: 16rem;
-		width: 59rem;
+		top: 22rem;
+		width: 49.3rem;
 		img {
 			box-shadow: -1rem 1.2rem $clr-sunny-yellow;
 		}

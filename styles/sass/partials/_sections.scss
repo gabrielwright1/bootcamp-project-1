@@ -182,11 +182,12 @@
 		.left-wrapper {
 			display: flex;
 			flex-basis: 30%;
+			padding: 0 0 0 10rem;
 		}
 		.right-wrapper {
 			display: flex;
 			flex-direction: column;
-			flex-basis: 68%;
+			flex-basis: 57%;
 		}
 	}
 }
@@ -195,7 +196,7 @@
 // Blog About
 // -----------------
 .blog-about {
-	margin: 10rem 0;
+	margin: 7rem 0;
 	.wrapper {
 		display: flex;
 		flex-direction: column;
@@ -238,7 +239,7 @@
 // -----------------
 .blog-mission {
 	margin: 25rem 10rem 0 0;
-	padding: 6rem 3rem 3rem 3rem;
+	padding: 6rem 1.5rem 3rem 3rem;
 	box-shadow: -0.5rem 0.5em $clr-sunny-yellow;
 	h4 {
 		margin: 0;
