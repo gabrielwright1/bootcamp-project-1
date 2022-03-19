@@ -38,6 +38,16 @@ h4 {
 // heading (planed's founder...)
 h5 {
 	@include set-typography($ff-primary, $fw-bold, $fs-300, normal, $ls-100);
+	// comments
+	&.comments {
+		@include set-typography(
+			$ff-primary,
+			$fw-bold,
+			$fs-200,
+			normal,
+			$ls-100
+		);
+	}
 }
 
 h6 {
@@ -54,8 +64,9 @@ h6 {
 		);
 	}
 	// heading (Tuesday October...)
-	&.comments {
+	&.comment-date {
 		@include set-typography($ff-primary, $fw-bold, $fs-100, $lh-100);
+		color: $clr-forest-green;
 	}
 }
 
