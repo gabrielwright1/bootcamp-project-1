@@ -33,7 +33,12 @@
 	background: url(../../../assets/blog-header-1.jpg);
 	background-size: cover;
 	height: 30rem;
-	// container
+	// navbar banner
+	.banner-wrapper {
+		background-color: black;
+		width: 100%;
+		max-width: none;
+	}
 	.wrapper {
 		display: flex;
 		flex-direction: column;
@@ -43,17 +48,15 @@
 	}
 	.text-container {
 		position: absolute;
-		top: 15rem;
-		left: calc(10% + 10rem);
+		top: 13rem;
 	}
 	.image-container {
-		// display: none;
 		position: absolute;
-		right: 10%;
-		bottom: -25rem;
-		width: 58rem;
+		right: 0;
+		top: 16rem;
+		width: 59rem;
 		img {
-			box-shadow: -1rem 2rem $clr-sunny-yellow;
+			box-shadow: -1rem 1.2rem $clr-sunny-yellow;
 		}
 	}
 }
