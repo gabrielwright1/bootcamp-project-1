@@ -533,7 +533,7 @@ ul {
   position: absolute;
   right: 0;
   top: 18rem;
-  width: 49.3rem;
+  width: 50.7rem;
 }
 .blog-header .image-container img {
   -webkit-box-shadow: -1rem 1.2rem #f8e71c;
@@ -770,8 +770,8 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-preferred-size: 57%;
-      flex-basis: 57%;
+  -ms-flex-preferred-size: 58.5%;
+      flex-basis: 58.5%;
 }
 
 .blog-about {
@@ -788,11 +788,10 @@ ul {
   width: 22rem;
   background-color: white;
   position: relative;
-  height: 47rem;
+  height: 49.5rem;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  right: -1rem;
 }
 .blog-about .text-container {
   padding: 0 3rem 0 1rem;
@@ -817,13 +816,13 @@ ul {
 .blog-about .image-container {
   position: absolute;
   top: -1rem;
-  left: -7em;
-  width: 28rem;
+  left: -10em;
+  width: 31rem;
 }
 
 .blog-mission {
   margin: 21rem 7rem 2rem 0;
-  padding: 6rem 2rem 2rem 3rem;
+  padding: 6rem 2rem 2rem 2rem;
   -webkit-box-shadow: -0.5rem 0.5em #f8e71c;
           box-shadow: -0.5rem 0.5em #f8e71c;
 }
@@ -846,7 +845,7 @@ ul {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  padding: 0 0 0 3rem;
+  padding: 0 0 0 2rem;
 }
 .blog-comments h5 {
   margin: 1rem 0 3rem 0;
@@ -882,7 +881,7 @@ ul {
 }
 
 .blog-comment-form {
-  margin: 1rem 0 5rem 2rem;
+  margin: 1rem 0 5rem 0.5rem;
 }
 .blog-comment-form form {
   width: calc(100% - 7.5rem);
