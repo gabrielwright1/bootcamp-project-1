@@ -452,7 +452,7 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding: 1.5rem 0 0 10rem;
+  padding: 1.5rem 0 1rem 10rem;
   margin: 0;
 }
 .header-nav ul {
@@ -468,10 +468,6 @@ ul {
 }
 .header-nav .mobile-menu {
   display: none;
-}
-
-.blog-header .header-nav {
-  padding: 1.5rem 0 1rem 10rem;
 }
 
 .home-header {

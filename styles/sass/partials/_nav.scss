@@ -2,7 +2,7 @@
 .header-nav {
 	display: flex;
 	flex-direction: row;
-	padding: 1.5rem 0 0 10rem;
+	padding: 1.5rem 0 1rem 10rem;
 	margin: 0;
 	// nav container
 	ul {
@@ -13,12 +13,5 @@
 	}
 	.mobile-menu {
 		display: none;
-	}
-}
-
-// Blog
-.blog-header {
-	.header-nav {
-		padding: 1.5rem 0 1rem 10rem;
 	}
 }
