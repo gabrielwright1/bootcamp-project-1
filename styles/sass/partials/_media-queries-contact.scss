@@ -1,8 +1,21 @@
 @media (max-width: 1500px) {
 	// header
 	.contact-header {
-		height: 30rem;
+		height: 25rem;
+
+		// main title
+		.text-container {
+			padding: 0 0 2rem 0;
+			left: 0;
+			top: 10rem;
+		}
+
+		// nav
+		.header-nav {
+			padding: 1.5rem 0 0 0;
+		}
 	}
+
 	.contact {
 		height: 55rem;
 
@@ -42,22 +55,6 @@
 			textarea {
 				padding: 2rem 0 0 1rem;
 			}
-		}
-	}
-	// header
-	.contact-header {
-		height: 25rem;
-
-		// main title
-		.text-container {
-			padding: 0 0 2rem 0;
-			left: 0;
-			top: 10rem;
-		}
-
-		// nav
-		.header-nav {
-			padding: 1.5rem 0 0 0;
 		}
 	}
 

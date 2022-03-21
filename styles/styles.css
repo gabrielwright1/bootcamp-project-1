@@ -1399,7 +1399,15 @@ ul {
 }
 @media (max-width: 1500px) {
   .contact-header {
-    height: 30rem;
+    height: 25rem;
+  }
+  .contact-header .text-container {
+    padding: 0 0 2rem 0;
+    left: 0;
+    top: 10rem;
+  }
+  .contact-header .header-nav {
+    padding: 1.5rem 0 0 0;
   }
 
   .contact {
@@ -1451,18 +1459,6 @@ ul {
   }
   .contact .contact-form textarea {
     padding: 2rem 0 0 1rem;
-  }
-
-  .contact-header {
-    height: 25rem;
-  }
-  .contact-header .text-container {
-    padding: 0 0 2rem 0;
-    left: 0;
-    top: 10rem;
-  }
-  .contact-header .header-nav {
-    padding: 1.5rem 0 0 0;
   }
 
   .contact-header .wrapper {
