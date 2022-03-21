@@ -14,10 +14,12 @@
 		></script>
 	</head>
 	<body>
+		<!-- skip link -->
+		<a href="#maincontent" class="skip-link">Skip to main content.</a>
 		<header class="home-header">
 			<div class="wrapper">
 				<!-- header nav -->
-				<nav class="header-nav mobile">
+				<nav class="header-nav">
 					<!-- logo -->
 					<a class="logo" href="#">Planted</a>
 					<!-- nav links -->
@@ -27,12 +29,23 @@
 						<li><a href="./blog.html">Blog</a></li>
 						<li><a href="./contact.html">Contact</a></li>
 					</ul>
-					<!-- hamburger menu -->
-					<a class="mobile-menu" href="#"
-						><i class="fa-solid fa-bars"></i
-					></a>
 				</nav>
-
+				<!-- slide out nav -->
+				<div class="slide-out-nav-container">
+					<!-- slide out checkbox -->
+					<input type="checkbox" id="open-sidebar-menu" />
+					<label for="open-sidebar-menu" class="open-sidebar-menu">
+						<i class="fa-solid fa-bars"></i>
+					</label>
+					<nav class="slide-out-nav">
+						<ul>
+							<li><a href="./index.html">Home</a></li>
+							<li><a href="#">About</a></li>
+							<li><a href="./blog.html">Blog</a></li>
+							<li><a href="./contact.html">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
 				<!-- header title -->
 				<div class="text-container">
 					<h1>Planted <span>invitation</span></h1>
@@ -47,7 +60,7 @@
 			</div>
 		</header>
 
-		<main>
+		<main id="maincontent">
 			<!-- about -->
 			<section class="home-about">
 				<div class="wrapper">

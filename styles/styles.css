@@ -466,8 +466,46 @@ ul {
   gap: 3rem;
   margin: 0;
 }
-.header-nav .mobile-menu {
+
+.slide-out-nav-container {
   display: none;
+  position: absolute;
+  right: 0;
+  padding: 1.5rem 0;
+  /* slide out nav icon */
+  /* slide out menu when checked */
+}
+.slide-out-nav-container .slide-out-nav {
+  position: absolute;
+  background-color: black;
+  border: 1px solid white;
+  top: 5rem;
+  padding: 1rem;
+  right: -400px;
+  gap: 3rem;
+  z-index: 10;
+}
+.slide-out-nav-container .slide-out-nav ul {
+  padding: 0;
+}
+.slide-out-nav-container .slide-out-nav a {
+  color: white;
+  text-decoration: none;
+}
+.slide-out-nav-container i {
+  color: white;
+  -webkit-transform: scale(3, 2);
+          transform: scale(3, 2);
+  cursor: pointer;
+}
+.slide-out-nav-container input[type=checkbox] {
+  opacity: 0;
+  position: absolute;
+}
+.slide-out-nav-container input[type=checkbox]:checked ~ .slide-out-nav {
+  right: -1rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .home-header {
@@ -1193,31 +1231,14 @@ ul {
     right: -4rem;
   }
 
-  .header-nav.mobile {
+  .header-nav ul {
+    display: none;
+  }
+
+  .slide-out-nav-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .header-nav.mobile ul {
-    padding: 0;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    position: absolute;
-    right: 1000px;
-  }
-  .header-nav.mobile .mobile-menu {
-    color: #f0efed;
-    -webkit-transform: scale(3, 1.5);
-            transform: scale(3, 1.5);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding: 0.2rem 0.5rem 0 0;
   }
 }
 @media (max-width: 480px) {

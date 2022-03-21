@@ -148,25 +148,15 @@
 			right: -4rem;
 		}
 	}
+	// hide main nav
 	.header-nav {
-		&.mobile {
-			display: flex;
-			justify-content: space-between;
-			// move the mobile nav offscreen
-			ul {
-				padding: 0;
-				flex-direction: column;
-				position: absolute;
-				right: 1000px;
-			}
-			// hamburger icon
-			.mobile-menu {
-				color: $clr-offwhite;
-				transform: scale(3, 1.5);
-				display: flex;
-				padding: 0.2rem 0.5rem 0 0;
-			}
+		ul {
+			display: none;
 		}
+	}
+	// show slide out nav
+	.slide-out-nav-container {
+		display: flex;
 	}
 }
 @media (max-width: 480px) {
