@@ -1,0 +1,82 @@
+@media (max-width: 1650px) {
+}
+
+@media (max-width: 1200px) {
+	// header
+	.blog-header {
+		// prevent headerbox from overflowing
+		overflow-x: clip;
+
+		// main title
+		.text-container {
+			padding: 4rem 0 2rem 0;
+			left: 0;
+		}
+
+		// nav
+		.header-nav {
+			padding: 1.5rem 0 0 0;
+		}
+	}
+
+	// resize wrappers
+	.blog-header .wrapper {
+		width: 80%;
+	}
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 620px) {
+	.blog-header {
+		height: 40rem;
+		h1 {
+			@include set-typography($ff-primary, $fw-regular, $fs-675);
+		}
+		// hide main nav
+		.header-nav {
+			ul {
+				display: none;
+			}
+		}
+		// show slide out nav
+		.slide-out-nav-container {
+			display: flex;
+		}
+	}
+}
+@media (max-width: 480px) {
+	.blog-header {
+		height: 35rem;
+		h1 {
+			@include set-typography($ff-primary, $fw-regular, $fs-650);
+		}
+		.text-container {
+			top: 15rem;
+		}
+	}
+
+	// resize wrappers
+	.blog-header .wrapper {
+		width: 90%;
+	}
+}
+
+@media (max-width: 360px) {
+	.blog-header {
+		height: 30rem;
+		// shrink header to fit smaller screen
+		h1 {
+			@include set-typography($ff-primary, $fw-regular, $fs-625);
+		}
+		.text-container {
+			top: 10rem;
+		}
+	}
+
+	// resize wrappers
+	.blog-header .wrapper {
+		width: 95%;
+	}
+}

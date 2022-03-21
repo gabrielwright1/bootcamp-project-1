@@ -1,0 +1,134 @@
+@media (max-width: 1650px) {
+}
+
+@media (max-width: 1200px) {
+	// header
+	.contact-header {
+		// prevent headerbox from overflowing
+		overflow-x: clip;
+
+		.banner-wrapper {
+			padding: 0 0 1rem 0rem;
+		}
+
+		// main title
+		.text-container {
+			padding: 4rem 0 2rem 0;
+			left: 0;
+		}
+
+		// nav
+		.header-nav {
+			padding: 1.5rem 0 0 0;
+		}
+	}
+
+	// resize wrappers
+	.contact-header .wrapper {
+		width: 80%;
+	}
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 620px) {
+	.contact-header {
+		height: 40rem;
+		h1 {
+			@include set-typography($ff-primary, $fw-regular, $fs-675);
+		}
+		// hide main nav
+		.header-nav {
+			ul {
+				display: none;
+			}
+		}
+		// show slide out nav
+		.slide-out-nav-container {
+			display: flex;
+		}
+	}
+}
+@media (max-width: 480px) {
+	.contact-header {
+		height: 35rem;
+		h1 {
+			@include set-typography($ff-primary, $fw-regular, $fs-650);
+		}
+		.text-container {
+			top: 15rem;
+		}
+	}
+
+	// resize wrappers
+	.contact-header .wrapper {
+		width: 90%;
+	}
+}
+
+@media (max-width: 360px) {
+	.contact-header {
+		height: 20rem;
+		// shrink header to fit smaller screen
+		h1 {
+			@include set-typography($ff-primary, $fw-regular, $fs-625);
+		}
+		.text-container {
+			top: 0rem;
+			left: 0rem;
+		}
+		.slide-out-nav-container {
+			display: flex;
+			z-index: 30;
+			padding: 1.5rem 1rem;
+		}
+	}
+	.contact {
+		height: 55rem;
+
+		& > .wrapper {
+			flex-direction: column-reverse;
+			justify-content: space-evenly;
+		}
+
+		.contact-details {
+			height: 10rem;
+			margin: 0;
+			padding: 0;
+			flex-basis: 25%;
+			text-align: center;
+			.socials {
+				justify-content: center;
+				gap: $gap;
+			}
+			a {
+				padding: 0;
+			}
+		}
+		.contact-form {
+			margin: 1rem 0 3rem 0.5rem;
+			position: static;
+			form {
+				width: 100%;
+				padding: 1rem;
+			}
+			.input-wrapper {
+				flex-direction: column;
+			}
+			[type="text"],
+			[type="email"] {
+				padding: 0 0 1rem 1rem;
+			}
+			textarea {
+				padding: 2rem 0 0 1rem;
+			}
+		}
+	}
+
+	// resize wrappers
+	.contact-header .wrapper,
+	.contact .wrapper {
+		width: 95%;
+	}
+}

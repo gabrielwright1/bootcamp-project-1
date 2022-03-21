@@ -147,16 +147,18 @@
 			width: 18rem;
 			right: -4rem;
 		}
-	}
-	// hide main nav
-	.header-nav {
-		ul {
-			display: none;
+		// hide main nav
+		.header-nav {
+			ul {
+				display: none;
+			}
 		}
-	}
-	// show slide out nav
-	.slide-out-nav-container {
-		display: flex;
+		// show slide out nav
+		.slide-out-nav-container {
+			display: flex;
+			z-index: 30;
+			padding: 1.5rem 1rem;
+		}
 	}
 }
 @media (max-width: 480px) {

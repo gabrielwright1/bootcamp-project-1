@@ -201,7 +201,7 @@
 		display: flex;
 		flex-direction: column;
 		width: 22rem;
-		background-color: white;
+		background-color: $clr-white;
 		position: relative;
 		height: 49.5rem;
 		justify-content: flex-end;
@@ -347,7 +347,7 @@
 		top: -13rem;
 		form {
 			width: 52rem;
-			background-color: white;
+			background-color: $clr-white;
 			padding: 3rem;
 			box-shadow: -1rem 2rem $clr-sunny-yellow;
 		}
