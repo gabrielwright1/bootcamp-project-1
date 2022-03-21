@@ -33,11 +33,13 @@
 	background: url(../../../assets/blog-header-1.jpg);
 	background-size: cover;
 	height: 30rem;
+
 	// navbar banner
 	.banner-wrapper {
 		background-color: $clr-darkblack;
 		width: 100%;
 		max-width: none;
+		padding: 0 0 1rem 0rem;
 	}
 	.wrapper {
 		display: flex;
@@ -72,6 +74,7 @@
 		background-color: $clr-darkblack;
 		width: 100%;
 		max-width: none;
+		padding: 0 0 1rem 0rem;
 	}
 	.wrapper {
 		display: flex;
