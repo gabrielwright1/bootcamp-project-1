@@ -61,3 +61,40 @@
 		}
 	}
 }
+
+// Contact
+.contact-header {
+	background: url(../../../assets/contact-header-1.jpg);
+	background-size: cover;
+	height: 30rem;
+	// navbar banner
+	.banner-wrapper {
+		background-color: black;
+		width: 100%;
+		max-width: none;
+	}
+	.wrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		position: relative;
+		height: 100%;
+	}
+	.text-container {
+		position: absolute;
+		top: 15rem;
+		padding: 0 0 0 10rem;
+		h1 {
+			width: 20rem;
+		}
+	}
+	.image-container {
+		position: absolute;
+		right: 0;
+		top: 18rem;
+		width: 50.7rem;
+		img {
+			box-shadow: -1rem 1.2rem $clr-sunny-yellow;
+		}
+	}
+}

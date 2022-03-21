@@ -264,7 +264,8 @@ h1 span {
 }
 
 h2,
-.blog-header h1 {
+.blog-header h1,
+.contact-header h1 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 700;
   font-size: 4rem;
@@ -311,6 +312,12 @@ h6.comment-date {
   font-size: 1.25rem;
   line-height: 1.6rem;
   color: #074115;
+}
+h6.contact-email {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.6rem;
 }
 
 .cta-button {
@@ -536,6 +543,49 @@ ul {
   width: 50.7rem;
 }
 .blog-header .image-container img {
+  -webkit-box-shadow: -1rem 1.2rem #f8e71c;
+          box-shadow: -1rem 1.2rem #f8e71c;
+}
+
+.contact-header {
+  background: url(../../../assets/contact-header-1.jpg);
+  background-size: cover;
+  height: 30rem;
+}
+.contact-header .banner-wrapper {
+  background-color: black;
+  width: 100%;
+  max-width: none;
+}
+.contact-header .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  height: 100%;
+}
+.contact-header .text-container {
+  position: absolute;
+  top: 15rem;
+  padding: 0 0 0 10rem;
+}
+.contact-header .text-container h1 {
+  width: 20rem;
+}
+.contact-header .image-container {
+  position: absolute;
+  right: 0;
+  top: 18rem;
+  width: 50.7rem;
+}
+.contact-header .image-container img {
   -webkit-box-shadow: -1rem 1.2rem #f8e71c;
           box-shadow: -1rem 1.2rem #f8e71c;
 }
@@ -880,10 +930,12 @@ ul {
   margin: 0 0 0 2.2rem;
 }
 
-.blog-comment-form {
+.blog-comment-form,
+.contact-form {
   margin: 1rem 0 5rem 0.5rem;
 }
-.blog-comment-form form {
+.blog-comment-form form,
+.contact-form form {
   width: calc(100% - 7.5rem);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -893,7 +945,8 @@ ul {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.blog-comment-form form .input-wrapper {
+.blog-comment-form form .input-wrapper,
+.contact-form form .input-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -903,7 +956,10 @@ ul {
 }
 .blog-comment-form form input[type=text],
 .blog-comment-form form input[type=email],
-.blog-comment-form form textarea {
+.blog-comment-form form textarea,
+.contact-form form input[type=text],
+.contact-form form input[type=email],
+.contact-form form textarea {
   padding: 0 0 1rem 1.5rem;
   -ms-flex-preferred-size: 46.5%;
       flex-basis: 46.5%;
@@ -912,15 +968,77 @@ ul {
   border: 0;
   border-bottom: 2px solid #0e902d;
 }
-.blog-comment-form form textarea {
+.blog-comment-form form textarea,
+.contact-form form textarea {
   border: 2px solid #0e902d;
   padding: 2rem 0 0 1.5rem;
 }
-.blog-comment-form form .cta-button {
+.blog-comment-form form .cta-button,
+.contact-form form .cta-button {
   border: none;
   padding: 0.5rem 0;
   margin: 1rem 0 0 0;
   cursor: pointer;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 30rem;
+}
+.contact .contact-form {
+  position: relative;
+  top: -13rem;
+}
+.contact .contact-form form {
+  width: 52rem;
+  background-color: white;
+  padding: 3rem;
+  -webkit-box-shadow: -1rem 2rem #f8e71c;
+          box-shadow: -1rem 2rem #f8e71c;
+}
+.contact .contact-form textarea {
+  margin: 2rem 0;
+}
+.contact .contact-form input[type=text],
+.contact .contact-form input[type=email] {
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
+}
+
+.contact-details {
+  margin: 6.5rem 0;
+  padding: 0 0 0 10rem;
+  -ms-flex-preferred-size: 35%;
+      flex-basis: 35%;
+}
+.contact-details .text-container h6 {
+  margin: 0;
+}
+.contact-details .text-container ul {
+  padding: 0;
+  margin: 1rem 0;
+}
+.contact-details .socials {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.contact-details .socials a {
+  padding: 0 1rem 0 0;
+}
+.contact-details .socials i {
+  color: #0e902d;
 }
 
 @media (max-width: 1650px) {

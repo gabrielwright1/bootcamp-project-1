@@ -166,7 +166,7 @@
 }
 
 // -----------------
-// Blog Layout
+// Blog - Layout
 // -----------------
 .blog {
 	display: flex;
@@ -299,9 +299,10 @@
 }
 
 // -----------------
-// Blog Comment Form
+// Forms
 // -----------------
-.blog-comment-form {
+.blog-comment-form,
+.contact-form {
 	margin: 1rem 0 5rem 0.5rem;
 	form {
 		width: calc(100% - 7.5rem);
@@ -330,6 +331,61 @@
 			padding: 0.5rem 0;
 			margin: 1rem 0 0 0;
 			cursor: pointer;
+		}
+	}
+}
+
+// -----------------
+// Contact - Layout
+// -----------------
+.contact {
+	display: flex;
+	flex-direction: row;
+	height: 30rem;
+	.contact-form {
+		position: relative;
+		top: -13rem;
+		form {
+			width: 52rem;
+			background-color: white;
+			padding: 3rem;
+			box-shadow: -1rem 2rem $clr-sunny-yellow;
+		}
+		textarea {
+			margin: 2rem 0;
+		}
+		input[type="text"],
+		input[type="email"] {
+			flex-basis: 48%;
+		}
+	}
+}
+
+// -----------------
+// Contact Details
+// -----------------
+.contact-details {
+	margin: 6.5rem 0;
+	padding: 0 0 0 10rem;
+	flex-basis: 35%;
+	.text-container {
+		h6 {
+			margin: 0;
+		}
+		ul {
+			padding: 0;
+			margin: 1rem 0;
+		}
+	}
+	.socials {
+		padding: 0;
+		display: flex;
+		flex-direction: row;
+		a {
+			padding: 0 1rem 0 0;
+		}
+		i {
+			color: $clr-green;
 		}
 	}
 }

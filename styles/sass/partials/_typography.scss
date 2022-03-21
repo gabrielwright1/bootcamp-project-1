@@ -20,7 +20,8 @@ h1 {
 
 // heading (get in touch..)
 h2,
-.blog-header h1 {
+.blog-header h1,
+.contact-header h1 {
 	@include set-typography($ff-primary, $fw-bold, $fs-600, $lh-200);
 }
 
@@ -67,6 +68,11 @@ h6 {
 	&.comment-date {
 		@include set-typography($ff-primary, $fw-bold, $fs-150, $lh-100);
 		color: $clr-forest-green;
+	}
+
+	// info@gmail.com
+	&.contact-email {
+		@include set-typography($ff-primary, $fw-bold, $fs-150, $lh-100);
 	}
 }
 

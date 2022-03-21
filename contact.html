@@ -1,12 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact</title>
-    <!-- custom css -->
-    <link rel="stylesheet" href="./styles/styles.css" />
-  </head>
-  <body></body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Contact</title>
+		<!-- custom css -->
+		<link rel="stylesheet" href="./styles/styles.css" />
+		<!-- font awesome -->
+		<script
+			src="https://kit.fontawesome.com/3d4b6f2301.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<header class="contact-header">
+			<div class="banner-wrapper">
+				<div class="wrapper">
+					<!-- header nav -->
+					<nav class="header-nav mobile">
+						<!-- logo -->
+						<a class="logo" href="#">Planted</a>
+						<!-- nav links -->
+						<ul>
+							<li><a href="./index.html">Home</a></li>
+							<li><a href="#">About</a></li>
+							<li><a href="./blog.html">Blog</a></li>
+							<li><a href="./contact.html">Contact</a></li>
+						</ul>
+						<!-- hamburger menu -->
+						<a class="mobile-menu" href="#"
+							><i class="fa-solid fa-bars"></i
+						></a>
+					</nav>
+					<!-- header title -->
+					<div class="text-container">
+						<h1>
+							<span>Get in Touch</span>
+						</h1>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="contact">
+			<div class="wrapper">
+				<!-- contact details -->
+				<section class="contact-details">
+					<!-- social media links -->
+					<ul class="socials">
+						<li>
+							<a href="#"
+								><i class="fa-brands fa-facebook-f"></i
+							></a>
+						</li>
+						<li>
+							<a href="#"
+								><i class="fa-brands fa-instagram"></i
+							></a>
+						</li>
+						<li>
+							<a href="#"><i class="fa-brands fa-twitter"></i></a>
+						</li>
+						<li>
+							<a href="#"
+								><i class="fa-brands fa-whatsapp"></i
+							></a>
+						</li>
+					</ul>
+					<!-- contact email -->
+					<div class="text-container">
+						<h6 class="contact-email">info@gmail.com</h6>
+						<ul>
+							<li>123 - 456 - 7890</li>
+							<li>123 Queen Street W, Unit 10</li>
+							<li>Toronto, Ontario</li>
+							<li>M5V2D5</li>
+						</ul>
+					</div>
+				</section>
+				<!-- comment form -->
+				<section class="contact-form">
+					<form action="">
+						<div class="input-wrapper">
+							<!-- name -->
+							<input
+								type="text"
+								name="user-name"
+								id="user-name"
+								placeholder="Name"
+							/>
+							<label class="sr-only" for="user-name"
+								>Enter your name</label
+							>
+							<!-- email address -->
+							<input
+								type="email"
+								name="user-email"
+								id="user-email"
+								placeholder="Email address"
+							/>
+							<label class="sr-only" for="email"
+								>Enter your email address</label
+							>
+						</div>
+						<!-- comment input -->
+						<textarea
+							name="user-message"
+							id="user-message"
+							cols="30"
+							rows="7"
+							placeholder="Message"
+						></textarea
+						><label class="sr-only" for="user-message"
+							>Enter your message</label
+						>
+						<!-- post comment button -->
+						<input
+							class="cta-button"
+							type="submit"
+							value="Submit"
+						/>
+					</form>
+				</section>
+			</div>
+		</main>
+		<footer class="copyright">Copyright (c) 2018 HackerYou</footer>
+	</body>
 </html>
