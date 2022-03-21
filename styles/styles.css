@@ -1460,10 +1460,6 @@ ul {
   .contact .contact-form textarea {
     padding: 2rem 0 0 1rem;
   }
-
-  .contact-header .wrapper {
-    width: 80%;
-  }
 }
 @media (max-width: 620px) {
   .contact-header {
@@ -1478,68 +1474,17 @@ ul {
     display: flex;
   }
 }
-@media (max-width: 360px) {
+@media (max-width: 320px) {
   .contact-header .slide-out-nav-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     z-index: 30;
-    padding: 1.5rem 1rem;
-  }
-
-  .contact {
-    height: 55rem;
-  }
-  .contact > .wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-  }
-  .contact .contact-details {
-    height: 10rem;
-    margin: 0;
-    padding: 0;
-    -ms-flex-preferred-size: 25%;
-        flex-basis: 25%;
-    text-align: center;
-  }
-  .contact .contact-details .socials {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    gap: 3rem;
-  }
-  .contact .contact-details a {
-    padding: 0;
-  }
-  .contact .contact-form {
-    margin: 1rem 0 3rem 0.5rem;
-    position: static;
-  }
-  .contact .contact-form form {
-    width: 100%;
-    padding: 1rem;
-  }
-  .contact .contact-form .input-wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .contact .contact-form [type=text],
-.contact .contact-form [type=email] {
-    padding: 0 0 1rem 1rem;
-  }
-  .contact .contact-form textarea {
-    padding: 2rem 0 0 1rem;
+    right: 1rem;
   }
 
   .contact-header .wrapper,
 .contact .wrapper {
-    width: 95%;
+    width: 90%;
   }
 }
