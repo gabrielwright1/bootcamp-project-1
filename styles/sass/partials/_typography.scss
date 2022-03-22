@@ -33,7 +33,8 @@ h3 {
 
 // heading (our mission..)
 h4 {
-	@include set-typography($ff-primary, $fw-bold, $fs-400, normal, $ls-200);
+	// ** changed line height from 32 to 62px to prevent overlap when wrapping on mobile
+	@include set-typography($ff-primary, $fw-bold, $fs-400, $lh-150, $ls-200);
 }
 
 // heading (planed's founder...)
