@@ -1095,6 +1095,7 @@ ul {
 }
 .contact-details .socials i {
   color: #0e902d;
+  cursor: pointer;
 }
 
 @media (max-width: 1650px) {
