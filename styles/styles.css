@@ -1260,7 +1260,6 @@ ul {
     display: -ms-flexbox;
     display: flex;
     z-index: 30;
-    padding: 1.5rem 1rem;
   }
 }
 @media (max-width: 480px) {
@@ -1279,6 +1278,9 @@ ul {
   .home-header .text-container {
     top: 15rem;
   }
+  .home-header .slide-out-nav-container {
+    padding: 1.5rem 0rem;
+  }
 
   .services li {
     margin: 0.5rem;
@@ -1287,8 +1289,7 @@ ul {
     left: -1.5rem;
   }
 
-  .home-header .wrapper,
-.home-about .wrapper,
+  .home-about .wrapper,
 .events .wrapper,
 .services .wrapper,
 .services .wrapper,

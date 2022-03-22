@@ -157,7 +157,6 @@
 		.slide-out-nav-container {
 			display: flex;
 			z-index: 30;
-			padding: 1.5rem 1rem;
 		}
 	}
 }
@@ -174,6 +173,9 @@
 		.text-container {
 			top: 15rem;
 		}
+		.slide-out-nav-container {
+			padding: 1.5rem 0rem;
+		}
 	}
 
 	// services
@@ -187,7 +189,6 @@
 	}
 
 	// resize wrappers
-	.home-header .wrapper,
 	.home-about .wrapper,
 	.events .wrapper,
 	.services .wrapper,
