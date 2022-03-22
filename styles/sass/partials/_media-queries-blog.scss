@@ -215,6 +215,7 @@
 				gap: 1rem;
 
 				.image-container {
+					min-width: 5rem;
 					width: 20rem;
 					margin: 0 2rem 0 0;
 				}
@@ -223,6 +224,20 @@
 			li:nth-child(2) {
 				.text-container {
 					padding: 0 0 0 0.5rem;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 720px) {
+	.blog {
+		.blog-comments {
+			// comment 2
+			li:nth-child(2) {
+				.text-container {
+					padding: 0 0 0 1rem;
+					left: -1.2rem;
 				}
 			}
 		}

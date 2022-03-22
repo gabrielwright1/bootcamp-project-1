@@ -1515,11 +1515,18 @@ ul {
     gap: 1rem;
   }
   .blog .blog-comments .user-profile .image-container {
+    min-width: 5rem;
     width: 20rem;
     margin: 0 2rem 0 0;
   }
   .blog .blog-comments li:nth-child(2) .text-container {
     padding: 0 0 0 0.5rem;
+  }
+}
+@media (max-width: 720px) {
+  .blog .blog-comments li:nth-child(2) .text-container {
+    padding: 0 0 0 1rem;
+    left: -1.2rem;
   }
 }
 @media (max-width: 480px) {
