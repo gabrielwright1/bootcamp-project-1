@@ -971,20 +971,28 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 7rem 5rem 0;
+  margin: 2rem 0;
 }
 .blog-comments .image-container {
-  width: 25rem;
+  width: 92px;
+  max-height: 92px;
+  margin: 0 2rem 0 0;
+  padding: 0;
+}
+.blog-comments .image-container img {
+  max-width: 92px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.blog-comments .text-container {
+  padding: 0;
+  margin: 0;
 }
 .blog-comments .text-container p {
   margin: 0;
 }
 .blog-comments .text-container h6 {
   margin: 0 0 0.5rem 0;
-}
-.blog-comments li:nth-child(2) .text-container {
-  position: relative;
-  left: -2.2rem;
 }
 
 .blog-comment-form,
