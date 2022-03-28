@@ -1,4 +1,4 @@
-## JS Feature: Blog Comment Feed with form validation
+## JS Feature: Blog comment feed with form validation
 
 Requirements: 
 - Take user input in comment form
