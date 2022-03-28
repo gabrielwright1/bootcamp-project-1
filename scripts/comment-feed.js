@@ -1,44 +1,11 @@
-// Comment Feed
+// namespace obj
+const app = {};
 
-// Requirements:
-// Take user input in comment form
-// Sanitize user inputs
-// Create li element in ul.comment-list
-// Add user input to paragraph element
-// Build a string to put in the h6.comment-date element using user name and current date
-// Autofill a user photo from unsplash
-// Append li element to ul.comment-list
+// target form element
+app.formEl = document.querySelector("form");
 
-//-------------------------
-// VARIABLES
-//-------------------------
-
-// Special characters to escape for user input
-const entityMap = {
-	"&": "&amp;",
-	"<": "&lt;",
-	">": "&gt;",
-	'"': "&quot;",
-	"'": "&#39;",
-	"/": "&#x2F;",
-	"`": "&#x60;",
-	"=": "&#x3D;",
-};
-
-//-------------------------
-// TARGET ELEMENTS
-//-------------------------
-
-// Take user input in comment form
-const formEl = document.querySelector("form");
-
-//-------------------------
-// FUNCTIONS
-//-------------------------
-
-// randomizes image name
-function randomizeUserPicture() {
-	// array containing image options
+app.randomizeUserPicture = () => {
+	// array containing image options from assets
 	const photoArr = [
 		"profile-image-1.jpg",
 		"profile-image-2.jpg",
@@ -53,12 +20,11 @@ function randomizeUserPicture() {
 	const index = Math.floor(Math.random() * photoArr.length);
 	// return image name
 	return photoArr[index];
-}
+};
 
-// creates a random date string (Wednesday January 10th, 2022)
-function getDateString() {
+app.getDateString = () => {
 	// generate random date
-	const randDate = getRandomDate(new Date(2018, 9, 1), new Date());
+	const randDate = app.getRandomDate(new Date(2018, 9, 1), new Date());
 
 	// extract day/month indices
 	const day = randDate.getDay();
@@ -101,27 +67,78 @@ function getDateString() {
 	} else {
 		return `${dayNames[day]} ${monthNames[month]} ${day}th, ${year}`;
 	}
-}
+};
 
-// creates a random date based on start/end date range
-function getRandomDate(start, end) {
+app.getRandomDate = (start, end) => {
+	// create a random date between two dates (start/end)
 	return new Date(
 		start.getTime() + Math.random() * (end.getTime() - start.getTime())
 	);
-}
+};
 
-// clear form inputs
-function clearCommentForm(name, email, comment) {
+app.clearCommentForm = (name, email, comment) => {
 	name.value = "";
 	email.value = "";
 	comment.value = "";
-}
+};
 
-//-------------------------
-// EVENT LISTENERS
-//-------------------------
-formEl.addEventListener("submit", function (event) {
-	// prevent refresh
+app.addElemStyling = (liElem, hElem, textContainerElem, imgContainerElem) => {
+	// add styling to elements
+	liElem.classList.add("user-profile");
+	hElem.classList.add("comment-date");
+	textContainerElem.classList.add("text-container");
+	imgContainerElem.classList.add("image-container");
+};
+
+app.addRandomImage = (imgElem) => {
+	// add random image
+	const imageName = app.randomizeUserPicture();
+	imgElem.setAttribute("src", `./assets/${imageName}`);
+};
+
+app.checkLength = (input, charLimit) => {
+	// compare string length against character limit
+	if (input.value.length > charLimit) {
+		return false;
+	}
+	return true;
+};
+
+app.checkEmpty = (input) => {
+	// check for whitespace or empty string
+	const regex = /^\s+$/;
+	if (regex.test(input.value) || input.value === "") {
+		return false;
+	}
+	return true;
+};
+
+app.validateInputs = (userName, userEmail, userComment) => {
+	// prevent users from entering blanks in the name, email, or comment fields
+	try {
+		// check character length
+		if (!app.checkLength(userName, 15))
+			throw "name too long (15 character limit)";
+		if (!app.checkLength(userComment, 250))
+			throw "comment is too long (250 character limit)";
+		if (!app.checkLength(userEmail, 50))
+			throw "email is too long (50 character limit)";
+		// check for blank inputs
+		if (!app.checkEmpty(userName))
+			throw "name is blank, please enter a name";
+		if (!app.checkEmpty(userEmail))
+			throw "email is blank, please enter email";
+		if (!app.checkEmpty(userComment))
+			throw "comment is blank, please enter a comment";
+	} catch (e) {
+		alert(e);
+		return false;
+	}
+	return true;
+};
+
+app.setupForm = (event) => {
+	// prevent refresh on submit
 	event.preventDefault();
 
 	// get raw user input from form:
@@ -129,46 +146,55 @@ formEl.addEventListener("submit", function (event) {
 	const userEmail = document.querySelector("#user-email");
 	const userComment = document.querySelector("#user-comment");
 
-	// target ul containing comments
-	const ulElem = document.querySelector("#comment-list");
+	// validate user input, if it passes, continue executing
+	if (app.validateInputs(userName, userEmail, userComment)) {
+		// target ul containing comments
+		const ulElem = document.querySelector("#comment-list");
 
-	// create elements to store input
-	const pElem = document.createElement("p");
-	const liElem = document.createElement("li");
-	const h6Elem = document.createElement("h6");
-	const textContainerElem = document.createElement("div");
-	const imgContainerElem = document.createElement("div");
-	const imgElem = document.createElement("img");
+		// create elements to store input
+		const pElem = document.createElement("p");
+		const liElem = document.createElement("li");
+		const hElem = document.createElement("h6");
+		const textContainerElem = document.createElement("div");
+		const imgContainerElem = document.createElement("div");
+		const imgElem = document.createElement("img");
 
-	// add styling to elements
-	liElem.classList.add("user-profile");
-	h6Elem.classList.add("comment-date");
-	textContainerElem.classList.add("text-container");
-	imgContainerElem.classList.add("image-container");
+		// trim whitespace from user name
+		const trimmedName = userName.value.trim();
 
-	// generate random date
-	const commentDate = getDateString();
+		// add css classes to form elements
+		app.addElemStyling(liElem, hElem, textContainerElem, imgContainerElem);
 
-	// add user input to elements
-	h6Elem.textContent = `${commentDate} by ${userName.value}`;
-	pElem.textContent = userComment.value;
+		// add user input to elements with random date
+		hElem.textContent = `${app.getDateString()} by ${trimmedName}`;
+		pElem.textContent = userComment.value;
 
-	// add random image
-	const imageName = randomizeUserPicture();
-	imgElem.setAttribute("src", `./assets/${imageName}`);
+		// add a random image to comment
+		app.addRandomImage(imgElem);
 
-	// append elements to containers
-	imgContainerElem.appendChild(imgElem);
-	textContainerElem.appendChild(h6Elem);
-	textContainerElem.appendChild(pElem);
+		// append elements to containers
+		imgContainerElem.appendChild(imgElem);
+		textContainerElem.appendChild(hElem);
+		textContainerElem.appendChild(pElem);
 
-	// append containers to li
-	liElem.appendChild(imgContainerElem);
-	liElem.appendChild(textContainerElem);
+		// append containers to li
+		liElem.appendChild(imgContainerElem);
+		liElem.appendChild(textContainerElem);
 
-	// append li to ul
-	ulElem.appendChild(liElem);
+		// append li to ul
+		ulElem.appendChild(liElem);
 
-	// clear the form content
-	clearCommentForm(userName, userEmail, userComment);
+		// clear the form content
+		app.clearCommentForm(userName, userEmail, userComment);
+	}
+};
+
+app.init = () => {
+	// set event listener on form submit
+	app.formEl.addEventListener("submit", app.setupForm);
+};
+
+// check for document ready
+document.addEventListener("DOMContentLoaded", (event) => {
+	app.init();
 });
