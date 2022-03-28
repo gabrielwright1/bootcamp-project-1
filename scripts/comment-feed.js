@@ -42,7 +42,7 @@ app.getDateString = () => {
 		"Saturday",
 	];
 
-	// weekday array
+	// month name array
 	const monthNames = [
 		"January",
 		"February",
