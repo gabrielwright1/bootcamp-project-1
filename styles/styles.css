@@ -1386,9 +1386,6 @@ ul {
   .blog-comments .user-profile {
     gap: 2rem;
   }
-  .blog-comments li:nth-of-type(2) .text-container {
-    left: -1.8rem;
-  }
 }
 @media (max-width: 1160px) {
   .blog .blog-mission {
@@ -1405,13 +1402,6 @@ ul {
   .blog-comments .user-profile {
     width: 27rem;
     margin: 0 0 5rem 0;
-  }
-  .blog-comments li:nth-of-type(2) .text-container {
-    left: -2.1rem;
-    padding: 0 0 0 2rem;
-  }
-  .blog-comments li:nth-of-type(2) .image-container {
-    width: 20rem;
   }
 
   .blog-comment-form form {
@@ -1525,20 +1515,6 @@ ul {
     display: flex;
     gap: 1rem;
   }
-  .blog .blog-comments .user-profile .image-container {
-    min-width: 5rem;
-    width: 20rem;
-    margin: 0 2rem 0 0;
-  }
-  .blog .blog-comments li:nth-child(2) .text-container {
-    padding: 0 0 0 0.5rem;
-  }
-}
-@media (max-width: 720px) {
-  .blog .blog-comments li:nth-child(2) .text-container {
-    padding: 0 0 0 1rem;
-    left: -1.2rem;
-  }
 }
 @media (max-width: 480px) {
   .blog-comments .user-profile {
@@ -1547,10 +1523,6 @@ ul {
         -ms-flex-direction: column;
             flex-direction: column;
     margin: 0 0 4rem 0;
-  }
-  .blog-comments li:nth-child(2) .text-container {
-    margin: 0rem;
-    left: -2rem;
   }
 }
 @media (max-width: 320px) {
