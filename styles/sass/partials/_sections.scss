@@ -289,24 +289,25 @@
 	}
 	.user-profile {
 		display: flex;
-		margin: 0 7rem 5rem 0;
+		margin: 2rem 0;
 	}
 	.image-container {
-		width: 25rem;
+		width: 92px;
+		margin: 0 2rem 0 0;
+		padding: 0;
+		img {
+			max-width: 92px;
+			object-fit: cover;
+		}
 	}
 	.text-container {
+		padding: 0;
+		margin: 0;
 		p {
 			margin: 0;
 		}
 		h6 {
 			margin: 0 0 0.5rem 0;
-		}
-	}
-	// comment 2
-	li:nth-child(2) {
-		.text-container {
-			position: relative;
-			left: -2.2rem;
 		}
 	}
 }
