@@ -18,4 +18,4 @@ Requirements:
 - Prevent users from entering blanks, empty spaces, and strings that are too long
 
 ## Live Demo:
-- https://gabriel-wright-project-1-with-form-validation.netlify.app/
+- https://gabriel-wright-project-1-form-validation.netlify.app/
