@@ -120,24 +120,6 @@
 }
 
 @media (max-width: 940px) {
-	// prevent overflow
-	body {
-		overflow-x: hidden;
-	}
-	// header
-	.blog-header {
-		.header-nav {
-			ul {
-				display: none;
-			}
-		}
-		// show slide out nav
-		.slide-out-nav-container {
-			display: flex;
-			z-index: 30;
-		}
-	}
-
 	// main content
 	.blog {
 		height: auto;
@@ -197,6 +179,26 @@
 				display: flex;
 				gap: 1rem;
 			}
+		}
+	}
+}
+
+@media (max-width: 620px) {
+	// prevent overflow
+	body {
+		overflow-x: hidden;
+	}
+	// header
+	.blog-header {
+		.header-nav {
+			ul {
+				display: none;
+			}
+		}
+		// show slide out nav
+		.slide-out-nav-container {
+			display: flex;
+			z-index: 30;
 		}
 	}
 }
