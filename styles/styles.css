@@ -1363,9 +1363,6 @@ html {
     left: 0;
     top: 10rem;
   }
-  .blog-header .header-nav {
-    padding: 1.5rem 0 0 0;
-  }
 
   .blog .left-wrapper {
     padding: 0;
@@ -1390,6 +1387,11 @@ html {
 
   .blog-comments .user-profile {
     gap: 2rem;
+  }
+}
+@media (max-width: 1200px) {
+  .header-nav {
+    padding: 1.5rem 0 0 0;
   }
 }
 @media (max-width: 1160px) {
@@ -1552,9 +1554,6 @@ html {
     padding: 0 0 2rem 0;
     left: 0;
     top: 5rem;
-  }
-  .contact-header .header-nav {
-    padding: 1.5rem 0 0 0;
   }
 
   .contact {
